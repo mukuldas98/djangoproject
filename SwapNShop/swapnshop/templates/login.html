@@ -44,7 +44,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/SwapNShop/assets/images/1-removebg-preview (1).png" alt="SwapNShop Logo" class="navbar-logo">
+                {% load static %}
+                <img src="{% static 'assets/images/1-removebg-preview.png' %}" alt="SwapNShop Logo" class="navbar-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

@@ -1,7 +1,12 @@
 # created by: Mukul 
 from django.http import HttpResponse
+from django.shortcuts import render
 def index(request):
-    return HttpResponse("Hello, world. You're at the swapnshop index.")
+    return render(request, 'index.html')
 
-def about(request):
-    return HttpResponse("Hello, world. You're at the swapnshop about.")
+def login(request):
+    print("login")
+    return render(request, 'login.html')
+
+def signup(request):
+    return render(request, 'signup.html')
