@@ -5,120 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SwapNShop - Second-Hand Marketplace</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Custom Styles */
-        .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x600') no-repeat center center;
-            background-size: cover;
-            color: white;
-            padding: 150px 0;
-            text-align: center;
-        }
+<link rel="stylesheet" href="../static/assets/css/styles.css">
 
-        .hero-section h1 {
-            font-size: 3.5rem;
-            font-weight: bold;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        .hero-section p {
-            font-size: 1.5rem;
-            animation: fadeIn 3s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .category-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: none;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .category-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .category-card h5 {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        .carousel-item img {
-            height: 400px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 50%;
-            padding: 10px;
-        }
-
-        .search-bar {
-            max-width: 800px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .search-bar input {
-            border: none;
-            border-radius: 5px;
-            padding: 10px;
-        }
-
-        .search-bar button {
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-        }
-
-        .navbar-brand img {
-            height: 40px;
-        }
-
-        .footer {
-            background: #333;
-            color: white;
-            padding: 40px 0;
-            margin-top: 50px;
-        }
-
-        .footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            color: #f8f9fa;
-        }
-
-        .footer .social-icons a {
-            font-size: 1.5rem;
-            margin: 0 10px;
-        }
-        .navbar-logo {
-        height: 50px; /* Adjust the height as needed */
-        width: auto; /* Maintains aspect ratio */
-    }
-    </style>
 </head>
 <body>
     <!-- Navbar with Logo Placeholder -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                {% load static %}
-                <img src="{% static 'assets/images/1-removebg-preview.png' %}" alt="SwapNShop Logo" class="navbar-logo">
+                
+                <img src="../static/assets/images/1-removebg-preview (1).png" alt="SwapNShop Logo" class="navbar-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -141,7 +37,7 @@
                         <a class="nav-link" href="login.html">login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/signup.html">signup</a>
+                        <a class="nav-link" href="signup.html">signup</a>
                     </li>
                 </ul>
             </div>
@@ -200,13 +96,13 @@
         <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Product 1">
+                    <img src="../static/assets/images/picture1.png" class="d-block w-100" alt="Product 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Product 2">
+                    <img src="../static/assets/images/2025-12-06T19.12.40_1.jpg" class="d-block w-100" alt="Product 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Product 3">
+                    <img src="../static/assets/images/picture2.png" class="d-block w-100" alt="Product 3">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
